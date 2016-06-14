@@ -67,28 +67,25 @@ public class ViewHolder {
     /**
      * 为TextView赋值
      */
-    public ViewHolder setTextView(int viewId, String text) {
+    public void setTextView(int viewId, String text) {
         TextView view = getItemView(viewId);
         view.setText(text);
-        return this;
     }
 
     /**
      * 为ImageView赋值——drawableId
      */
-    public ViewHolder setImageResource(int viewId, int drawableId) {
+    public void setImageResource(int viewId, int drawableId) {
         ImageView view = getItemView(viewId);
         view.setImageResource(drawableId);
-        return this;
     }
 
     /**
      * 为ImageView赋值——bitmap
      */
-    public ViewHolder setImageBitmap(int viewId, Bitmap bitmap) {
+    public void setImageBitmap(int viewId, Bitmap bitmap) {
         ImageView view = getItemView(viewId);
         view.setImageBitmap(bitmap);
-        return this;
     }
 
 }
